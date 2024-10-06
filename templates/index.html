@@ -1,0 +1,44 @@
+{% extends "master.html" %}
+{% block title %}
+    Welcome 
+{% endblock title %}
+
+{% block content %}
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 50vh; background-image: url('{{ url_for("static", filename="background.jpg") }}');">
+<h1>Hi, Welcome to my Website</h1> <p> *Made in Flask </p>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="p-4 border border-danger rounded">
+                <img src="{{ url_for('static', filename='Profilepic.PNG') }}" width="80" height="110">
+                <h5 class="text-center">About Me</h5>
+                <p>{{description}}</p>
+                <p> Age - {{age}}, Location- {{location}} ,Skills- {{skills}}, Schooling-{{schooling}}, Gradaution- {{graduation}} , Course - {{course}}
+            </div>
+        </div>
+    </div>
+</div>
+<br> <br> <br>
+<div class="container mt-5">
+    <h3> As Per The company's requirements, there is a need for someone capable of writing programs in Flask, FastAPI, and Django. I have made 3 apps based on these frameworks, take a look: </h3>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Django</h3>
+            <h4>A Social Media sites for the alumunis of our School</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Flask</h3>
+            <h4>A real Estate Website</h4>
+        </div>
+        <div class="col-md-4">
+            <h3>FastAPI</h3>
+            <h4>Its an Api which checks for foul languages in sentences</h4>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
