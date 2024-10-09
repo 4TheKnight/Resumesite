@@ -17,6 +17,7 @@ def home():
     graduation = os.getenv('GRADUATION')
     course = os.getenv('COURSE')
     description = os.getenv('DESCRIPTION')
+    flask_architecture = os.getenv('FLASK_ARCHITECTURE')
     return render_template(
         'index.html',
         name=name, 
@@ -26,7 +27,8 @@ def home():
         schooling=schooling, 
         graduation=graduation, 
         course=course, 
-        description=description
+        description=description,
+        flask_architecture=flask_architecture
         )
 
 
