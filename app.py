@@ -19,6 +19,7 @@ def home():
     description = os.getenv('DESCRIPTION')
     flask_architecture = os.getenv('FLASK_ARCHITECTURE')
     how_to_use = os.getenv('HOW_TO_USE')
+    django_architecture = os.getenv("DJANGO_ARCHITECTURE")
     return render_template(
         'index.html',
         name=name, 
@@ -30,7 +31,8 @@ def home():
         course=course, 
         description=description,
         flask_architecture=flask_architecture,
-        how_to_use_fastapi = how_to_use
+        how_to_use_fastapi = how_to_use,
+        django_architecture=django_architecture
         )
 
 
