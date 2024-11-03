@@ -15,43 +15,53 @@
                 <img src="{{ url_for('static', filename='Profilepic.PNG') }}" width="80" height="110">
                 <h5 class="text-center">About Me</h5>
                 <p>{{description}}</p>
-                <p> Age - {{age}}, Location- {{location}} ,Skills- {{skills}}, Schooling-{{schooling}}, Gradaution- {{graduation}} , Course - {{course}}
+                <p> Age - {{age}}, Location- {{location}} ,Skills- {{skills}}, Schooling-{{schooling}}, Gradaution- {{graduation}} , Course - {{course}}</p>
             </div>
         </div>
     </div>
 </div>
+
 <br> <br> <br>
+
+
 <div class="container mt-5">
-    <h3> As Per The company's requirements, there is a need for someone capable of writing programs in Flask, FastAPI, and Django. I have made 3 apps based on these frameworks, take a look: </h3>
+    <h3>As per the company's requirements, there is a need for someone capable of writing programs in Flask, FastAPI, and Django. I have made 3 apps based on these frameworks, take a look:</h3>
     
     <div class="row">
         <div class="col-md-4">
             <h3>Django</h3>
-            <h4>A Social Media sites for the alumunis of our School</h4>
-            <a href="https://reunion-a4aa.onrender.com/"> Reunion Website </a>
+            <h4>A Social Media site for the alumni of our School</h4>
+            <a href="https://reunion-a4aa.onrender.com/">Reunion Website</a>
             <p>{{django_architecture}}</p>
+	<img src="{{ url_for('static', filename='django.jpeg') }}" alt="Django Image" class="img-fluid mb-3">
+            
         </div>
         <div class="col-md-4">
             <h3>Flask</h3>
             <h4>A real Estate Website</h4>
             {{flask_architecture}}
-            <a href="https://flaskapp-rji0.onrender.com/">EstateX</a>
+            <a href="https://flaskapp-rji0.onrender.com/">EstateX</a><img src="{{ url_for('static', filename='flask.jpeg') }}" alt="Flask Image" class="img-fluid mb-3">
         </div>
         <div class="col-md-4">
             <h3>FastAPI</h3>
-            <h4>Its an Api Which chacks for the sentence for foul languages</h4>
-            <a href="https://cursewords.onrender.com/docs">Link </a>
-            <h4>how to use</h4>
-            <p>{{how_to_use_fastapi}}</p>
+            <h4>It's an API which checks for foul language in sentences</h4>
+            <a href="https://cursewords.onrender.com/docs">Link</a>
+            <h4>How to use</h4>
+            <p>{{how_to_use_fastapi}}</p><img src="{{ url_for('static', filename='fastapi.jpeg') }}" alt="FastAPI Image" class="img-fluid mb-3">
         </div>
     </div>
+</div>
+
+
+
     <div>
         <h2>My time at Hackerone</h2>
-        <p>While Working in Hackerone it was the best time of my life. I understood that as a developer we can take all the safety precautions but if the architecure of the App is Vulnerable it can be hacked. I understood how a website works and how we can exploit it</p>
-        <h4>I would like to provide you with one of my report which are disclosed please take a look</h4>
+        <p>While Working at Hackerone, it was the best time of my life. I understood that as a developer we can take all the safety precautions, but if the architecture of the App is vulnerable, it can be hacked. I understood how a website works and how we can exploit it.</p>
+        <h4>I would like to provide you with one of my reports which are disclosed; please take a look</h4>
         <a href="https://hackerone.com/reports/1357013">Link</a>
     </div>
 </div>
 
+               
 
 {% endblock content %}
